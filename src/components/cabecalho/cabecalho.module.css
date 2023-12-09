@@ -1,0 +1,39 @@
+.cabecalho {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5vh;
+}
+
+.cabecalho_imagem {
+    padding: 0.2em;
+}
+
+.cabecalho_infos {
+    display: flex;
+    gap: 5em;
+}
+
+.cabecalho_info {
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho_fonte_escritas {
+    font-family: var(--fonte-principal);
+}
+
+.cabecalho_fonte_paragrafo {
+    font-size: 12px;
+}
+
+@media screen and (max-width: 820px) {
+    .cabecalho_imagem {
+        padding: 0;
+    }
+
+    .cabecalho_infos {
+        display: none;
+    }
+}

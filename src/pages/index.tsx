@@ -1,7 +1,9 @@
-export default function Home() {
-  return (
-    <>
-      <h1>Oi mundinho!</h1>
-    </>
-  )
-}
+import Cabecalho from "@/components/cabecalho";
+
+export default function Inicio () {
+    return (
+        <>
+            <Cabecalho/>
+        </>
+    );
+};
