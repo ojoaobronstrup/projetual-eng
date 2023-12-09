@@ -1,0 +1,147 @@
+.servicos {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    gap: 5em;
+    margin-top: 3em;
+}
+
+.servicos_titulo {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 2em;
+}
+
+.servicos_lista {
+    display: grid;
+    grid-template-areas:
+    "um dois tres "
+    "quatro cinco seis";
+    height: 25vh;
+    width: 60vw;
+    gap: 3em;
+    align-self: center;
+}
+
+.servicos_regularizacoes {
+    grid-area: um;
+    background-color: var(--azul);
+    border-radius: 10px;
+}
+
+.servicos_ampliacoes {
+    grid-area: dois;
+    background-color: var(--azul);
+    border-radius: 10px;
+    width: 20vw;
+}
+
+.servicos_desmembramento {
+    grid-area: tres;
+    background-color: var(--azul);
+    border-radius: 10px;
+    width: 20vw;
+}
+
+.servicos_laudos {
+    grid-area: quatro;
+    background-color: var(--azul);
+    border-radius: 10px;
+    width: 20vw;
+}
+
+.servicos_ppci {
+    grid-area: cinco;
+    background-color: var(--azul);
+    border-radius: 10px;
+    width: 20vw;
+}
+
+.servicos_projetos {
+    grid-area: seis;
+    background-color: var(--azul);
+    border-radius: 10px;
+    width: 20vw;
+}
+
+.servicos_formatacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.servicos_servicos {
+    color: var(--branco);
+}
+
+.servicos_icones {
+    transform: scale(0.8);
+}
+
+@media screen and (max-width: 820px) {
+    .servicos_lista {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .servicos_regularizacoes {
+        width: 30em;
+    }
+
+    .servicos_ampliacoes {
+        width: 30em;
+    }
+
+    .servicos_desmembramento {
+        width: 30em;
+    }
+
+    .servicos_laudos {
+        width: 30em;
+    }
+
+    .servicos_ppci {
+        width: 30em;
+    }
+
+    .servicos_projetos {
+        width: 30em;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .servicos_regularizacoes {
+        width: 80vw;
+    }
+
+    .servicos_ampliacoes {
+        width: 80vw;
+    }
+
+    .servicos_desmembramento {
+        width: 80vw;
+    }
+
+    .servicos_laudos {
+        width: 80vw;
+    }
+
+    .servicos_ppci {
+        width: 80vw;
+    }
+
+    .servicos_projetos {
+        width: 80vw;
+    }
+
+    .servicos_lista {
+        display: flex; 
+        align-items: center;
+    }
+
+    .servicos {
+        margin-bottom: 200px;
+    }
+}
