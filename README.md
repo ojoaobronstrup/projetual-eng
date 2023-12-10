@@ -1,3 +1,16 @@
+# SOBRE
+  * Projeto desenvolvido para a construção de um site de engenharia de proriedade familiar.
+
+# TECNOLOGIAS
+  * TypeScript;
+  * Next;
+  * React;
+  * CSS Modules;
+
+Obs.: Primeiro projeto desenvolvido utilizando a ferramenta NextJS.
+
+----------------------------------------------------
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
