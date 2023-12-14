@@ -54,6 +54,7 @@
     justify-content: center;
     text-decoration: none;
     color: var(--branco);
+    cursor: pointer;
 }
 
 #botao_contato:hover {
@@ -64,7 +65,7 @@
     grid-area: menu;
     display: flex;
     height: 10vh;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .inicial_lista {
@@ -84,6 +85,7 @@
     color: var(--branco);
     font-size: 1.2em;
     white-space: nowrap;
+    cursor: pointer;
 }
 
 #inicial_inicio:hover {

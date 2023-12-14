@@ -19,6 +19,7 @@
     background-color: var(--azul);
     border-radius: 18px;
     padding: 10px;
+    cursor: pointer;
 }
 
 .final_fundo {

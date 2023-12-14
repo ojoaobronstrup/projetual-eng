@@ -9,7 +9,9 @@ export default function Home () {
                     <h1 id={styles.inicial_titulo}>ESPECIALIZADO EM REGULARIZAÇÕES</h1>
                 </div>
                 <div className={styles.inicial_botao}>
-                    <a href="https://api.whatsapp.com/send?phone=5555999076319&text=Ol%C3%A1,%20tudo%20bem?%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento" id={styles.botao_contato}>ENTRE EM CONTATO</a>
+                    <a onClick={() => {
+                        window.open("https://api.whatsapp.com/send?phone=5555999076319&text=Ol%C3%A1,%20tudo%20bem?%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento");
+                    }} id={styles.botao_contato}>ENTRE EM CONTATO</a>
                 </div>
                 <div className={styles.inicial_imagem}></div>
                 <nav className={styles.inicial_menu}>
@@ -18,7 +20,9 @@ export default function Home () {
                             <a href="#" className={styles.inicial_itens_escritas} id={styles.inicial_inicio}>Início</a>
                         </li>
                         <li className={styles.inicial_itens}>
-                            <a href="#" className={styles.inicial_itens_escritas} id={styles.inicial_areas}>Áreas de Atuação</a>
+                            <a className={styles.inicial_itens_escritas} id={styles.inicial_areas} onClick={()=>{
+                                window.scrollBy(0, 700);
+                            }}>Áreas de Atuação</a>
                         </li>
                         <li className={styles.inicial_itens}>
                             <a href="#" className={styles.inicial_itens_escritas} id={styles.inicial_blog}>Obras</a>
