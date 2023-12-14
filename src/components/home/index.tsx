@@ -21,14 +21,18 @@ export default function Home () {
                         </li>
                         <li className={styles.inicial_itens}>
                             <a className={styles.inicial_itens_escritas} id={styles.inicial_areas} onClick={()=>{
-                                window.scrollBy(0, 700);
+                                window.scrollBy({ top: 700, behavior: "smooth"});
                             }}>Áreas de Atuação</a>
                         </li>
                         <li className={styles.inicial_itens}>
-                            <a href="#" className={styles.inicial_itens_escritas} id={styles.inicial_blog}>Obras</a>
+                            <a href="#" className={styles.inicial_itens_escritas} id={styles.inicial_blog} onClick={() => {
+                                window.scrollBy({top: 1400, behavior: "smooth"});
+                            }}>Obras</a>
                         </li>
                         <li className={styles.inicial_itens}>
-                            <a href="#" className={styles.inicial_itens_escritas} id={styles.inicial_contato}>Contato</a>
+                            <a href="#" className={styles.inicial_itens_escritas} id={styles.inicial_contato} onClick={() => {
+                                window.scrollBy({top: 2100, behavior: "smooth"})
+                            }}>Contato</a>
                         </li>
                     </ul>
                 </nav>

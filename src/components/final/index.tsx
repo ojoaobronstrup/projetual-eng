@@ -6,9 +6,7 @@ export default function Final () {
             <section className={styles.final}>
                 <img src="/img/Fundo.png" alt="Fundo" className={styles.final_fundo}/>
                 <div className={styles.final_conteudo}>
-                    <image>
-                        <img src="/img/D&M.png" alt="Casal proprietário" className={styles.final_img}/>
-                    </image>
+                    <img src="/img/D&M.png" alt="Casal proprietário" className={styles.final_img}/>
                     <div className={styles.final_texto}>
                         <h2 className={styles.final_contato}>Entre em contato</h2>
                         <a onClick={() => {
