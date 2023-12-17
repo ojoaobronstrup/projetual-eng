@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./modalImg.module.css";
 
 export default function ModalImagem (props:any) {
@@ -6,7 +5,7 @@ export default function ModalImagem (props:any) {
         <>
             <section className={styles.corpo}>
                 <div className={styles.corpo_modal}>
-                    <Image src="/img/close.svg" alt="Icone de fechar" className={styles.fecha} onClick={() => {
+                    <img src="/img/close.svg" alt="Icone de fechar" className={styles.fecha} onClick={() => {
                         return window.location.pathname = "/";
                     }}/>
                     <div className={styles.modal_escritas}>
@@ -16,7 +15,7 @@ export default function ModalImagem (props:any) {
                         <h2><strong className={styles.modal_texto}>Área Total:</strong> {props.area}</h2>
                         <h2><strong className={styles.modal_texto}>Projetos Desenvolvidos:</strong> {props.projetos}</h2>
                     </div>
-                    <Image src={props.imagem} alt="Imagem de um prédio" className={styles.modal_predio1}/>
+                    <img src={props.imagem} alt="Imagem de um prédio" className={styles.modal_predio1}/>
                 </div>
             </section>
         </>

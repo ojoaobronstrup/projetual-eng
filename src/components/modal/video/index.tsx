@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./modalVdo.module.css";
 
 export default function ModalVideo (props:any) {
@@ -6,7 +5,7 @@ export default function ModalVideo (props:any) {
         <>
             <section className={styles.corpo}>
                 <div className={styles.corpo_modal}>
-                    <Image alt="Ícone de fechar" src="/img/close.svg" className={styles.fecha} onClick={() => {
+                    <img alt="Ícone de fechar" src="/img/close.svg" className={styles.fecha} onClick={() => {
                         return window.location.pathname = "/";
                     }}/>
                     <div className={styles.modal_escritas}>
