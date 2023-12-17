@@ -1,11 +1,32 @@
 import styles from "./cabecalho.module.css";
+import styled from "styled-components";
 
+const CabecalhoEstilizado = styled.header`
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5vh;
+`
+const CabecalhoImagem = styled.img`
+    padding: 0.2em;
+    @media (max-width: 820px) {
+        padding: 0;
+    };
+`
+const CabecalhoInfos = styled.div`
+    display: flex;
+    gap: 5em;
+    @media (max-width: 820px) {
+        display: none;
+    }
+`
 export default function Cabecalho() {
   return (
     <>
-        <header className={styles.cabecalho}>
-        <img src="/img/Logo.png" alt="Logo" className={styles.cabecalho_imagem}/>
-        <div className={styles.cabecalho_infos}>
+        <CabecalhoEstilizado>
+        <CabecalhoImagem src="/img/Logo.png" alt="Logo"/>
+        <CabecalhoInfos>
             <div className={styles.cabecalho_info}>
                 <img src="/img/Localização.svg" alt="Ícone de localização"/>
                 <div>
@@ -20,8 +41,8 @@ export default function Cabecalho() {
                     <p className={styles.cabecalho_fonte_escritas}>(55) 9 9953-2549</p>
                 </div>
             </div>
-        </div>
-    </header>
+        </CabecalhoInfos>
+    </CabecalhoEstilizado>
     </>
   );
 };
