@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./rodape.module.css";
 
 export default function Rodape () {
@@ -5,7 +6,7 @@ export default function Rodape () {
         <>
             <footer className={styles.rodape}>
                 <div className={styles.rodape1}>
-                    <img src="/img/Logo.png" alt="Logo do escritório Projetual" className={styles.rodape1_logo}/>
+                    <Image src="/img/Logo.png" alt="Logo do escritório Projetual" className={styles.rodape1_logo}/>
                 </div>
                 <div className={styles.rodape2}>
                     <nav className={styles.rodape_conj}>

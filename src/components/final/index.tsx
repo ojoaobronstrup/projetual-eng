@@ -1,12 +1,13 @@
+import Image from "next/image";
 import styles from "./final.module.css";
 
 export default function Final () {
     return (
         <>
             <section className={styles.final}>
-                <img src="/img/Fundo.png" alt="Fundo" className={styles.final_fundo}/>
+                <Image src="/img/Fundo.png" alt="Fundo" className={styles.final_fundo}/>
                 <div className={styles.final_conteudo}>
-                    <img src="/img/D&M.png" alt="Casal proprietário" className={styles.final_img}/>
+                    <Image src="/img/D&M.png" alt="Casal proprietário" className={styles.final_img}/>
                     <div className={styles.final_texto}>
                         <h2 className={styles.final_contato}>Entre em contato</h2>
                         <a onClick={() => {
