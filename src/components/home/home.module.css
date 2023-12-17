@@ -27,7 +27,7 @@
 .inicial_imagem {
     grid-area: foto;
     padding-left: 30em;
-    background-image: url("/img/D&M G.PNG");
+    background-image: url(/img/DanMir.png);
     background-size: cover;
     background-position: center;
 }
