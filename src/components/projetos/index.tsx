@@ -1,7 +1,7 @@
 import styles from "./projetos.module.css";
 import Link from "next/link";
 
-export default function () {
+export default function Projetos () {
     return (
         <>
             <section className={styles.projetos}>
